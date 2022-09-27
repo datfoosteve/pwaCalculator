@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephens PWA Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./assets/icon.svg">
+    <link rel="manifest" href="./manifest.json">
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js');
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display"></div>
+      <div class="controls">
+          <button class="maroon">C</button>
+          <button class="maroon"></button>
+          <button class="maroon">%</button>
+          <button class="maroon">+</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="maroon">-</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="maroon">X</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="maroon">÷</button>
+          <button>0</button>
+          <button class="maroon">.</button>
+          <button class="maroon"></button>
+          <button class="maroon">=</button>
+      </div>
+    </div>
 
+    <ul class="wrapper">
+        <li class="icon github">
+          <span class="tooltip">GitHub</span>
+          <span><i class="fab <fa->github</fa->"></i></span>
+        </li>
+        <li class="icon twitter">
+          <span class="tooltip">LinkedIn</span>
+          <span><i class="fa-brands fa-linkedin"></i></span>
+        </li>
+        <li class="icon youtube">
+          <span class="tooltip">Youtube</span>
+          <span><i class="fab fa-youtube"></i></span>
+        </li>
+        <div class="programInfo">
+            <span class="label label-info">Created By Stephen Puthenpurackal</span>
+            <span class="label label-info">PWA Web Application</span>
+        </div>
+      </ul>
+    <script src="./index.js"></script>
+  </body>

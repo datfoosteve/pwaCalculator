@@ -1,1 +1,11 @@
-
+{
+    "name": "ProgressiveCalculator",
+    "short_name": "Calculator",
+    "icons": [
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/pwaCalculator/",
+    "display": "standalone",
+    "orientation": "portrait"
+}
